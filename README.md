@@ -17,6 +17,21 @@ Specially, I focus on protected internal and private protected, readonly and con
         It is also accessible in a derived class located in another assembly only 
         if the access occurs through a variable of the derived class type
         
+        public class BaseClass
+        {
+           protected internal int myValue = 0;
+        }
+
+        class TestAccess
+        {
+            void Access()
+            {
+                BaseClass baseObject = new BaseClass();
+               <b> baseObject.myValue = 5; </b>
+            }
+        }
+
+        
 <b> 2. private protected </b>
 
         The private protected keyword combination is a member access modifier. 

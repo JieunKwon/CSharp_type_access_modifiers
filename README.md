@@ -27,7 +27,7 @@ Specially, I focus on protected internal and private protected, readonly and con
             void Access()
             {
                 BaseClass baseObject = new BaseClass();
-               <b> baseObject.myValue = 5; </b>
+                baseObject.myValue = 5; 
             }
         }
 
@@ -37,6 +37,24 @@ Specially, I focus on protected internal and private protected, readonly and con
         The private protected keyword combination is a member access modifier. 
         A private protected member is accessible by types derived from the containing class, 
         but only within its containing assembly
+        
+        public class BaseClass
+        {
+            private protected int myValue = 0;
+        }
+
+        public class DerivedClass1 : BaseClass
+        {
+            void Access()
+            {
+                BaseClass baseObject = new BaseClass();
+
+                // it shows differce HERE !!
+
+                // accessed through the current derived class instance
+                myValue = 5;
+            }
+        }
  
 <image src='modifier.JPG' width='600px'>
 

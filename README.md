@@ -1,8 +1,12 @@
 # CSharp > Types > Access Modifiers
+@ I searched and learned regarding Modifiers from MSDN. When I declare fields some time, I was confused which accessibility is right. 
+Specially, I focus on protected internal and private protected, readonly and const.  
 
+<image src='modifier_all.png' width='600px'>
+ 
 # Accessibility Level 
 
-<image src='image.png' width='500px'>
+<image src='image.png' width='600px'>
  
 ** confused two types **  
 <b> 1. protected internal </b>
@@ -17,7 +21,7 @@
         A private protected member is accessible by types derived from the containing class, 
         but only within its containing assembly
  
-<image src='modifier.JPG' width='500px'>
+<image src='modifier.JPG' width='600px'>
 
 # const vs. readonly 
 

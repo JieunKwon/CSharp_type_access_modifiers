@@ -2,7 +2,8 @@
 @ I searched and learned regarding Modifiers from MSDN. When I declare fields some time, I was confused which accessibility is right. 
 Specially, I focus on protected internal and private protected, readonly and const.  
 
-<image src='modifier_all.png' width='600px'>
+# All Modifiers
+<image src='modifier_all.JPG' width='600px'>
  
 # Accessibility Level 
 

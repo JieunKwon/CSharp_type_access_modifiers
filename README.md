@@ -9,7 +9,8 @@ Specially, I focus on protected internal and private protected, readonly and con
 
 <image src='image.png' width='600px'>
  
-** confused two types **  
+
+# protected internal vs. private protected 
 <b> 1. protected internal </b>
  
         A protected internal member of a base class is accessible from any type within its containing assembly. 
